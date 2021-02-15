@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kwmorlock/node-webex/issues"
   },
-  "homepage": "https://github.com/kwmorlock/node-webex#readme"
+  "homepage": "https://github.com/kwmorlock/node-webex#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
