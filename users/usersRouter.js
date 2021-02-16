@@ -49,7 +49,7 @@ router.post("/", checkRoles(["admin"]), (req, res) => {
 router.delete("/:id", (req, res) => {
   const id = req.params.id;
 
-  Users.destroy(id)
+  Users.remove(id)
     .then((bye) => {
       if (bye) {
         res.status(200).json({ removed: bye });
