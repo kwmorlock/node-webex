@@ -21,3 +21,16 @@
 | Set | Setup a new function etc |
 | Sty | Styling and design |
 | Upd | Update code for improved or more relevant use |
+
+# Register / Login Endpoints
+| Request | URL | Description |
+| ------- | --- | ----------- |
+| POST | /api/users/auth/register| register as a new user |
+| POST | /api/users/auth/login | login as an existing user |
+
+# Register / Login
+| Name | Type | Required | Unique | Notes |
+| ---- | ---- | -------- | ------ | ----- |
+| username | string | yes | yes | users username |
+| password | string | yes | no | users password |
+| email | string | no | yes | users email |
