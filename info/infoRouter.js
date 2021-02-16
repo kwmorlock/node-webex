@@ -64,7 +64,7 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", (req, res) => {
   const id = req.params.id;
 
-  Information.destroy(id)
+  Information.remove(id)
     .then((bye) => {
       if (bye) {
         res.status(200).json({ removed: bye });
