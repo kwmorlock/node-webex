@@ -34,3 +34,21 @@
 | username | string | yes | yes | users username |
 | password | string | yes | no | users password |
 | email | string | no | yes | users email |
+
+# Info Endpoints
+| Request | URL | Description |
+| ------- | --- | ----------- |
+| GET | api/info | get all info for all users (needs to be logged in) |
+| GET | api/info/:id | get info with specific id |
+| GET | api/info/users/:id | get all info from specific user id |
+| POST | api/info/:id | add info from user |
+| PUT | api/info/:id | edit specific info for user |
+| DELETE | api/info/:id | delete specific info for user |
+
+# Info
+| Name | Type | Required | Unique | Notes |
+| ---- | ---- | -------- | ------ | ----- |
+| id | integer | yes | yes | info id |
+| title | string | yes | no | info title|
+| description | string | yes | no | info |
+| usersId | integer | yes | no | users id |
